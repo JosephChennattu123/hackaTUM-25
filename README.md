@@ -2,6 +2,7 @@
 python -m venv venv # Creates venv  
 ./venv/Scripts/activate # Activates venv  
 pip install -r "requirements.txt"  
+gcloud auth application-default login # Login with hackatum gcp details, requires gcli. Sets ADC locally  
 fastapi dev app/main.py  
 
 <b>To run the frontend:</b>    
