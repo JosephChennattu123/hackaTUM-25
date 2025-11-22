@@ -10,6 +10,9 @@ class Settings(BaseSettings):
         "http://localhost:3000",
     ]
 
-    model_config = SettingsConfigDict(env_file=".env", case_sensitive=True)
+    # Gemma Colab
+    GEMMA_COLAB_NOTE: str
+
+    model_config = SettingsConfigDict(env_file=".env", case_sensitive=True, extra="ignore")
 
 settings = Settings()
