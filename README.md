@@ -4,14 +4,6 @@
 
 Waldo is a comprehensive platform for generating and detecting watermarks in AI-generated content (Text & Images). It consists of a web application for easy interaction and an open-source library for researchers and developers.
 
-## 📂 Project Structure
-
-- **[`frontend/`](./frontend)**: A Next.js web interface for users to generate and detect watermarks.
-- **[`backend/`](./backend)**: A FastAPI server handling the core logic and model inference.
-- **[`oss_library/`](./oss_library)**: A standalone open-source library containing:
-    -   **`waldo`**: Notebooks for generating watermarked content.
-    -   **`wheres_waldo`**: A lightweight Python package for detection.
-
 ---  
 ## 📚 Open Source Library
 
@@ -44,6 +36,14 @@ graph LR
     style H fill:#2d5eac,stroke:#000000,stroke-width:2px,color:#ffffff
 ```
 👉 **[Explore the OSS Library](./oss_library/README.md)**
+
+## 📂 Project Structure
+
+- **[`frontend/`](./frontend)**: A Next.js web interface for users to generate and detect watermarks.
+- **[`backend/`](./backend)**: A FastAPI server handling the core logic and model inference.
+- **[`oss_library/`](./oss_library)**: A standalone open-source library containing:
+    -   **`waldo`**: Notebooks for generating watermarked content.
+    -   **`wheres_waldo`**: A lightweight Python package for detection.
 ---
 
 ## 🚀 Quick Start
