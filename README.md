@@ -4,6 +4,39 @@
 
 Waldo is a comprehensive platform for generating and detecting watermarks in AI-generated content (Text & Images). It consists of a web application for easy interaction and an open-source library for researchers and developers.
 
+---  
+## 📚 Open Source Library
+
+We have extracted our core research and trials into a standalone library for the community.  
+It includes:
+- **Gemma Detector**: Detects invisible zero-width characters and statistical watermarks in text.
+- **Stable Diffusion Detector**: Analyzes frequency domain (FFT) to find injected noise patterns in images.
+
+## 🧠 The Concept
+
+The game is simple: **Waldo** hides a secret signal in the noise of AI outputs, and **Where's Waldo** tries to find it.
+
+```mermaid
+graph LR
+    subgraph "Waldo (Generation)"
+        A[User Prompt] --> B(AI Model);
+        B --> C{Watermarker};
+        C -->|Text| D[Watermarked Text];
+        C -->|Image| E[Watermarked Image];
+    end
+
+    subgraph "Where's Waldo (Detection)"
+        D --> F(GemmaDetector);
+        E --> G(StableDiffusionDetector);
+        F --> H{Verdict?};
+        G --> H;
+    end
+
+    style C fill:#db1f26,stroke:#ffffff,stroke-width:4px,color:#ffffff
+    style H fill:#2d5eac,stroke:#000000,stroke-width:2px,color:#ffffff
+```
+👉 **[Explore the OSS Library](./oss_library/README.md)**
+
 ## 📂 Project Structure
 
 - **[`frontend/`](./frontend)**: A Next.js web interface for users to generate and detect watermarks.
@@ -11,18 +44,6 @@ Waldo is a comprehensive platform for generating and detecting watermarks in AI-
 - **[`oss_library/`](./oss_library)**: A standalone open-source library containing:
     -   **`waldo`**: Notebooks for generating watermarked content.
     -   **`wheres_waldo`**: A lightweight Python package for detection.
-
----  
-## 📚 Open Source Library
-
-We have extracted our core research into a standalone library for the community.
-
-👉 **[Explore the OSS Library](./oss_library/README.md)**
-
-It includes:
-- **Gemma Detector**: Detects invisible zero-width characters and statistical watermarks in text.
-- **Stable Diffusion Detector**: Analyzes frequency domain (FFT) to find injected noise patterns in images.
-
 ---
 
 ## 🚀 Quick Start
