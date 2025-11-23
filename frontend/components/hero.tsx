@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-border/40">
@@ -21,6 +23,10 @@ export default function Hero() {
             Embed undetectable watermarks in AI-generated text, images, and audio. Verify authenticity and combat
             misinformation with our detection engine.
           </p>
+
+          <Link href="https://github.com/vika908/hackaTUM-25" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            https://github.com/vika908/hackaTUM-25
+          </Link>
         </div>
       </div>
     </section>

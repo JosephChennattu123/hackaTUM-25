@@ -6,19 +6,16 @@ export default function Footer() {
     <footer className="border-t border-border/40 py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between">
-          <div className="flex items-center gap-2 mb-4 sm:mb-0">
-            <div className="flex h-6 w-6 items-center justify-center rounded bg-primary">
-              <span className="text-sm font-bold text-primary-foreground">W</span>
-            </div>
+          <div className="flex flex-col items-center sm:items-start mb-4 sm:mb-0">
             <span className="font-semibold">Waldo</span>
+            <Link href="https://github.com/vika908/hackaTUM-25" className="text-sm text-muted-foreground hover:text-foreground transition-colors mt-2">
+              https://github.com/vika908/hackaTUM-25
+            </Link>
           </div>
 
           <div className="flex items-center gap-6">
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="https://github.com/vika908/hackaTUM-25" className="text-muted-foreground hover:text-foreground transition-colors">
               <Github className="h-5 w-5" />
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              <Twitter className="h-5 w-5" />
             </Link>
           </div>
         </div>
