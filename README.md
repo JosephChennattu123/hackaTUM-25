@@ -12,4 +12,7 @@ npm run dev
 Go to /health in the browser or click system status to check whether both are working or not.
 
 Papers list:
-[Scalable watermarking for identifying large language model outputs: SynthID Text Google](https://www.nature.com/articles/s41586-024-08025-4)
+[Scalable watermarking for identifying large language model outputs: SynthID Text Google](https://www.nature.com/articles/s41586-024-08025-4)  
+[Gemma 2: Improving Open Language Models at a Practical Size](https://arxiv.org/abs/2408.00118)  
+[High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752)  
+[Secure Data Embedding using Fourier Transform-based Watermarking](https://ieeexplore.ieee.org/document/10726146)  
