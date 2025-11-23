@@ -8,7 +8,7 @@ Waldo is a comprehensive platform for generating and detecting watermarks in AI-
 
 - **[`frontend/`](./frontend)**: A Next.js web interface for users to generate and detect watermarks.
 - **[`backend/`](./backend)**: A FastAPI server handling the core logic and model inference.
-- **[`oss_library/`](./oss_library)**: **(New!)** A standalone open-source library containing:
+- **[`oss_library/`](./oss_library)**: A standalone open-source library containing:
     -   **`waldo`**: Notebooks for generating watermarked content.
     -   **`wheres_waldo`**: A lightweight Python package for detection.
 
@@ -48,6 +48,8 @@ Visit `http://localhost:3000` to use the app.
 Check system status at `http://localhost:3000/health`.
 
 ---
+### 3. Remote Access
+We've hosted a running frontend for you: [Waldo](https://hacka-tum-25.vercel.app/).  
 
 ## 📚 Open Source Library
 
