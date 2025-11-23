@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between">
           <div className="flex flex-col items-center sm:items-start mb-4 sm:mb-0">
             <span className="font-semibold">Waldo</span>
-            <Link href="https://github.com/vika908/hackaTUM-25" className="text-sm text-muted-foreground hover:text-foreground transition-colors mt-2">
-              https://github.com/vika908/hackaTUM-25
+            <Link href="https://github.com/vika908/Waldo" className="text-sm text-muted-foreground hover:text-foreground transition-colors mt-2">
+              https://github.com/vika908/Waldo
             </Link>
           </div>
 

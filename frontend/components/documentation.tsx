@@ -17,27 +17,29 @@ export default function Documentation() {
                 Our text watermarking is powered by SynthID, an open-source technology that embeds an imperceptible statistical pattern into generated text. This pattern is created by subtly biasing token selection during generation in a way that does not affect readability or meaning, but can be detected with high confidence by a dedicated verifier.
               </p>
               <p>
-              For images, the watermark is embedded by introducing a specific pattern of noise that corresponds to a unique frequency signature. When transformed into the frequency domain, the watermarked image contains a distinct circular imbalance that can be reliably detected by our system.
+                For images, the watermark is embedded by introducing a specific pattern of noise that corresponds to a unique frequency signature. When transformed into the frequency domain, the watermarked image contains a distinct circular imbalance that can be reliably detected by our system.
+              </p>
+              <p>
+                For more details, please refer to the github repository: https://github.com/vika908/Waldo
               </p>
             </div>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-4">Technical Proof</h3>
+            <h3 className="text-2xl font-bold mb-4">Example of use</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                The Waldo watermarking system is based on peer-reviewed cryptographic research and has been validated
-                against industry-standard benchmarks. Our approach maintains content quality while achieving 99.8%
-                detection accuracy across various content types and transformation attacks.
-              </p>
-              <p>
-                The watermarking process introduces minimal overhead - typically less than 5% increase in generation
-                time - while providing cryptographic guarantees about content provenance. Each watermark is unique and
-                can be traced back to the specific model and generation session, enabling full auditability.
-              </p>
-              <p>
-                For detailed technical specifications, mathematical proofs, and benchmark results, please refer to our
-                comprehensive whitepaper available in the resources section.
+              from wheres_waldo import GemmaDetector, StableDiffusionDetector<br />
+
+              <code># Text Detection</code><br />
+              detector = GemmaDetector(tokenizer=...)<br />
+              result = detector.detect("Some suspicious text...")<br />
+              print(result)<br />
+
+              <code># Image Detection</code><br />
+              sd_detector = StableDiffusionDetector()<br />
+              result = sd_detector.detect(pil_image)<br />
+              print(result)<br />
               </p>
             </div>
           </div>
@@ -46,18 +48,12 @@ export default function Documentation() {
             <h3 className="text-2xl font-bold mb-4">Documentation References</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Our documentation covers everything from quick-start integration guides to advanced customization
-                options. The API reference includes detailed examples for all supported content types: text, images,
-                audio, and video watermarking.
-              </p>
-              <p>
-                Key resources include the Integration Guide for adding Waldo to your AI models, the Detection API
-                documentation for building verification systems, and code examples in Python, JavaScript, and other
-                popular languages. All documentation is maintained with the latest version updates and best practices.
-              </p>
-              <p>
-                For enterprise users, we provide additional resources including compliance guides, security audits, and
-                dedicated technical support channels.
+                This project implements concepts from the following papers:<br />
+
+                - Scalable watermarking for identifying large language model outputs: SynthID Text (Google)<br />
+                - Gemma 2: Improving Open Language Models at a Practical Size<br />
+                - High-Resolution Image Synthesis with Latent Diffusion Models<br />
+                - Secure Data Embedding using Fourier Transform-based Watermarking<br />
               </p>
             </div>
           </div>

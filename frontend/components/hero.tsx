@@ -24,8 +24,8 @@ export default function Hero() {
             misinformation with our detection engine.
           </p>
 
-          <Link href="https://github.com/vika908/hackaTUM-25" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            https://github.com/vika908/hackaTUM-25
+          <Link href="https://github.com/vika908/Waldo" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            https://github.com/vika908/Waldo
           </Link>
         </div>
       </div>
