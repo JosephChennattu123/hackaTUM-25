@@ -27,8 +27,8 @@ graph LR
         G --> H;
     end
 
-    style C fill:#f9f,stroke:#333,stroke-width:2px
-    style H fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#db1f26,stroke:#ffffff,stroke-width:4px,color:#ffffff
+    style H fill:#2d5eac,stroke:#000000,stroke-width:2px,color:#ffffff
 ```
 
 ## 📂 Structure
