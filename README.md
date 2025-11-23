@@ -12,6 +12,17 @@ Waldo is a comprehensive platform for generating and detecting watermarks in AI-
     -   **`waldo`**: Notebooks for generating watermarked content.
     -   **`wheres_waldo`**: A lightweight Python package for detection.
 
+---  
+## 📚 Open Source Library
+
+We have extracted our core research into a standalone library for the community.
+
+👉 **[Explore the OSS Library](./oss_library/README.md)**
+
+It includes:
+- **Gemma Detector**: Detects invisible zero-width characters and statistical watermarks in text.
+- **Stable Diffusion Detector**: Analyzes frequency domain (FFT) to find injected noise patterns in images.
+
 ---
 
 ## 🚀 Quick Start
@@ -50,18 +61,6 @@ Check system status at `http://localhost:3000/health`.
 ---
 ### 3. Remote Access
 We've hosted a running frontend for you: [Waldo](https://hacka-tum-25.vercel.app/).  
-
-## 📚 Open Source Library
-
-We have extracted our core research into a standalone library for the community.
-
-👉 **[Explore the OSS Library](./oss_library/README.md)**
-
-It includes:
-- **Gemma Detector**: Detects invisible zero-width characters and statistical watermarks in text.
-- **Stable Diffusion Detector**: Analyzes frequency domain (FFT) to find injected noise patterns in images.
-
----
 
 ## 🔬 References & Research
 
